@@ -1,4 +1,5 @@
 import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -29,7 +30,8 @@ class _DiceRollerScreenState extends State<DiceRollerScreen> {
 
   void _rollDice() {
     setState(() {
-      _diceNumber = Random().nextInt(6) + 1; // Generates a random number from 1 to 6
+      _diceNumber =
+          Random().nextInt(6) + 1; // Generates a random number from 1 to 6
     });
   }
 
@@ -57,8 +59,14 @@ class _DiceRollerScreenState extends State<DiceRollerScreen> {
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.white,
                 foregroundColor: Colors.blue.shade900,
-                padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
-                textStyle: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 32,
+                  vertical: 16,
+                ),
+                textStyle: const TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               child: const Text('Roll Dice'),
             ),
