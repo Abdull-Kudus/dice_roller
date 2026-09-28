@@ -1,7 +1,7 @@
-# dice_roller
+# Dice Roller
 
-A new Flutter project.
-
+A Flutter application that rolls a dice.
+            
 ## Getting Started
 
 This project is a starting point for a Flutter application.
